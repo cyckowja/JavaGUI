@@ -59,7 +59,14 @@ public class GUIDemo extends JFrame
             }
             else
             {
-                setSize(size.width - 10, size.height - 10);
+                if (e.getSource().equals(smallerButton))
+                {
+                    setSize(size.width - 10, size.height - 10);
+                }
+                else
+                {
+                    setSize(10,10);
+                }
             }
 
         }
